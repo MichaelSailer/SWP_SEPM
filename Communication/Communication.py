@@ -9,7 +9,6 @@ app = Flask(__name__)
 @app.route('/sendToRasp', methods=['POST'])
 def read_from_app():
     position = json.request["postion"]
-    abmessung = json.request["groese"]
     instanzen = json.request["objekte"]
 
     position.split(",")
